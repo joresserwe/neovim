@@ -12,6 +12,7 @@ vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
 local list =  {
   { key = "t",                            action = "tabnew", silent = "true" },
+  { key = "v",                            action = "vsplit", silent = "true" },
 }
 
 nvimtree.setup({
