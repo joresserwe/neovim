@@ -11,6 +11,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
 local list =  {
+  { key = {"l", "<CR>", "o"},             action = "edit", silent = "true" },
+  { key = "h",                            action = "close_node", silent = "true" },
   { key = "t",                            action = "tabnew", silent = "true" },
   { key = "v",                            action = "vsplit", silent = "true" },
 }
